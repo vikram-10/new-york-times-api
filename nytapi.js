@@ -41,12 +41,12 @@ async function getApis(section='home'){
         if(element.section==section){
             var card=document.createElement('div');
             card.classList.add('cardDesign','card','mb-3');
+            card.setAttribute('id','dummyID');
             card.innerHTML=`<div class="row no-gutters">
             <div class="col-md-8">
               <div class="card-body">
                 <h5 class="card-title">${element.title}</h5>
                 <p class="card-text">${element.abstract}</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
             <div class="col-md-4">
@@ -63,7 +63,6 @@ async function getApis(section='home'){
               <div class="card-body">
                 <h5 class="card-title">${element.title}</h5>
                 <p class="card-text">${element.abstract}</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
             <div class="col-md-4">
